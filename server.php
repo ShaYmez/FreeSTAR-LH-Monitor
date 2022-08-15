@@ -245,7 +245,7 @@ function sortNodes($nodes) {
     $arr=array();
     $never_heard=array();
     
-    // build list of heard and unheard
+    // build list of lastheard and unheard
     foreach($nodes as $nodeNum => $row) {
 //        if (strtoupper($row['link']) == "ESTABLISHED") {
         if (strtoupper($row['last_keyed']) > -1) {
